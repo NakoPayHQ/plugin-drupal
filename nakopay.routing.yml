@@ -1,0 +1,15 @@
+nakopay.settings:
+  path: '/admin/commerce/config/payment-gateways/nakopay'
+  defaults:
+    _form: '\Drupal\nakopay\Form\NakoPaySettingsForm'
+    _title: 'NakoPay Settings'
+  requirements:
+    _permission: 'administer commerce_payment_gateway'
+
+nakopay.webhook:
+  path: '/nakopay/webhook'
+  defaults:
+    _controller: '\Drupal\nakopay\Controller\WebhookController::handle'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'

@@ -1,0 +1,9 @@
+name: NakoPay
+type: module
+description: 'Accept Bitcoin, Lightning, and other cryptocurrencies in Drupal Commerce checkout via NakoPay.'
+core_version_requirement: ^10 || ^11
+package: Commerce (contrib)
+version: 1.0.0
+dependencies:
+  - commerce:commerce_payment
+  - commerce:commerce_order

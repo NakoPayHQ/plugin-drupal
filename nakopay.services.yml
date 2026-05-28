@@ -1,0 +1,4 @@
+services:
+  nakopay.api_client:
+    class: Drupal\nakopay\NakoPayApiClient
+    arguments: ['@config.factory', '@http_client', '@logger.factory']
